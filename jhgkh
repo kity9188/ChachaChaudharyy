@@ -1,0 +1,44 @@
+[33mcommit 7ef47cb741839bfa65d0ab5eb5b3dadd600250bc[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m, [m[1;31morigin/master[m[33m)[m
+Merge: aa5e959 ec88970
+Author: nicks9188 <nicks9188@gmail.com>
+Date:   Mon Feb 25 10:40:37 2019 +0530
+
+    Merge branch 'test2'
+
+[33mcommit ec88970f61225e45fa132f8242374f56ee442c10[m[33m ([m[1;31morigin/test2[m[33m, [m[1;32mtest2[m[33m)[m
+Author: nicks9188 <nicks9188@gmail.com>
+Date:   Mon Feb 25 10:37:29 2019 +0530
+
+    Test Branch Commit
+
+[33mcommit 1534f2311b0b3d6f58765495f484565b49996ffb[m
+Author: nicks9188 <nicks9188@gmail.com>
+Date:   Mon Feb 25 10:16:41 2019 +0530
+
+    Revert "Test2 Branch Commit"
+    
+    This reverts commit 3d4cf8675b06a5d05d88a92e6da35294be5ac725.
+
+[33mcommit 3d4cf8675b06a5d05d88a92e6da35294be5ac725[m
+Author: nicks9188 <nicks9188@gmail.com>
+Date:   Sun Feb 24 22:25:22 2019 +0530
+
+    Test2 Branch Commit
+
+[33mcommit aa5e959320df5a2ff506d757e1d4ae5653fe4b03[m
+Author: nicks9188 <nicks9188@gmail.com>
+Date:   Sun Feb 24 22:10:26 2019 +0530
+
+    Master Branch Commit
+
+[33mcommit 5fb94ae44c7eacc5604b2535b962c8cf6cdc9f92[m[33m ([m[1;31morigin/test[m[33m, [m[1;32mtest[m[33m)[m
+Author: nicks9188 <nicks9188@gmail.com>
+Date:   Wed Feb 20 19:58:45 2019 +0530
+
+    corrected address
+
+[33mcommit ba4b42eaf817c7d8db8c07b5bdae9d631fbdf5d6[m
+Author: nicks9188 <nicks9188@gmail.com>
+Date:   Wed Feb 20 19:47:55 2019 +0530
+
+    Cheers!
