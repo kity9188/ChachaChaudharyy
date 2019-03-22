@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1";>
+	
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
+		
+		<link rel="stylesheet" href="F:\Workspace\HTML\Chacha Chaudhary\main.css">
+		
+		<title img src="https://raw.githubusercontent.com/kity9188/images/master/Chacha.gif">Sign Up</title>
+		
+		<style>
+			/*---------- For Sign-Up form ----------*/
+
+			.container-signup {  	  
+			  right: 0;
+			  margin: 0px;   /* distance from top*/
+			  max-width: 350px;
+			  padding: 20px;   /*Spacing between coloms*/
+			  background-color: rgba(0,0,0,0.5);  /*Making Container Transparent*/
+			  font-family: Tangerine;
+			  text-align: left;
+			}
+			
+			/* Full-width input fields */
+			input[type=text], input[type=password], input[type=email] {
+			 width: 100%;
+			 padding: 7px;
+			 margin: 5px 0 5px 0;
+			 border: none;
+			 background: #f1f1f1;
+			}
+
+			input[type=text]:focus, input[type=password]:focus input[type=email]:focus {
+			 background-color: #ddd;
+			 outline: none;
+			}
+
+			/* Set a style for the submit button */
+			.btn {
+			  background-color: #4CAF50;
+			  color: white;
+			  padding: 12px 20px;
+			  border: none;
+			  cursor: pointer;
+			  width: 100%;
+			  opacity: 0.9;
+			}
+
+			.btn:hover {
+			  opacity: 1;
+			}
+			
+			.wrapper {
+			text-align : center;
+			}
+
+			.image, .form {
+				display: inline-block;
+				vertical-align: top;
+				margin: 20px;
+			}
+			
+			/****************************************/
+		</style>
+	</head>
+	<body class="header">
+	<br>
+	<div class="wrapper">
+		<div class="image"><br><br>
+			<image src="https://raw.githubusercontent.com/kity9188/images/master/Chacha-new1.gif"/>
+		</div>
+		<div class="form">
+			<form action="F:\Workspace\HTML\Chacha Chaudhary\Pages\Home.html" method="post" class="container-signup">
+				<h2 align="center">Sign Up</h2>
+					<label for="fname">First name:</label><input type="text" name="User" placeholder="First name here" required/>
+					<label for="lname">Last name:</label><input type="text" name="User" placeholder="Last name here" required/>
+					<label for="password">Password:</label>
+						<input type="password" name="Password" placeholder="Password here" required/>
+					<label for="cpassword">Confirm Password:</label>
+						<input type="password" name="Password" placeholder="Confirm your Password" required/>
+					<label for="email">Email:</label>
+						<input type="email" name="Password" placeholder="Your email" required/>
+					<label for="gender">Gender:</label><input type="radio" name="gender" value="male">Male
+						<input type="radio" name="gender" value="female">Female
+						<input type="radio" name="gender" value="other">Other	<br>
+
+					<label for="contact">Contact No:</label>
+					<input id="country-prefix" type="text" value="+91">
+					<br><br>
+					<button type="submit" class="btn">Sign Up</button>
+					
+						<p align="center">
+							Already a member <a href="F:\Workspace\HTML\Chacha Chaudhary\Index.html" method="post" style="color:dodgerblue">Sign In</a><span></span>
+							
+						</p>
+			</form>
+		</div>
+	</div>
+		
+				
+			</div>
+		</div>
+	</body>
+</html>

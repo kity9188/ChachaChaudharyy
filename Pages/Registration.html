@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<html>
+	<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, Chacha Chaudhary";>
+	
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
+	<link rel="shortcut icon" href="F:\Workspace\HTML\Chacha Chaudhary\images\Chacha.gif" />
+	
+	
+	<title img src="images/Chacha.gif">Registration</title>
+
+		
+	<style>
+		/*For CapsLock*/
+		#text {display:none;color:red}
+		
+		* {
+		   padding: 0px;
+		   margin: 0px;
+		  box-sizing: border-box;
+		}
+
+		/*Styling whole Body*/
+		body{
+		font-family: 'Tangerine', serif, Arial, Helvetica, sans-serif;
+        font-size: 23px;
+		text-shadow: 4px 4px 4px #aaa;
+		margin: 10px;
+		color: default;
+		
+        }
+		
+		/* Header/logo Title */
+		.header {
+		/*  padding: 0px; */
+		  text-align: left;
+		/*  background: #1abc9c; */
+		  color: white;
+		}
+
+		/* Increase the font size of the heading */
+		.header h1 {
+		  font-size: 50px;
+		}
+		
+		/* Footer */
+		.footer {
+		  padding: 20px;
+		  text-align: center;
+		  background: #ddd;
+		}
+
+		/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+		@media screen and (max-width: 700px) {
+		  .row {   
+			flex-direction: column;
+		  }
+		}
+
+		/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+		
+		@media screen and (max-width: 500px) {
+		  .navbar a {
+			float: none;
+			width: 100%;
+		  }
+		  .column {
+			width: 100%;
+		  }
+		}
+		
+		.body {
+		/*  background: url('F:\Workspace\HTML\Chacha Chaudhary\images\eggs.jpg');*/
+		  height: 600px;
+		  background-attachment: fixed;
+		  background-position: center;
+		  background-repeat: no-repeat;
+		  background-size: 100% 100%;
+	
+		/*  position: relative; */
+		}
+		
+		
+	</style>
+	
+	</head>
+	
+	<body background="F:\Workspace\HTML\Chacha Chaudhary\images\eggs.jpg" class="responsive">
+		<div class="body">
+	
+		<div class="header"><h1><img src="F:\Workspace\HTML\Chacha Chaudhary\images\Chacha.gif" alt="Logo" style="width:100px;height:90px;">Registration</h1></div>
+		<hr>
+	
+		<center>
+			<br>
+			<br>
+		
+			<table>
+				<tr>
+					<td><image src="F:\Workspace\HTML\Chacha Chaudhary\images\Chacha-new1.gif" alt="Chacha Welcome" style="width:50%"/></td>
+					<td>
+						<h2 align="center">Sign Up</h2>
+						<br>
+						<form action="Dashboard.html" method="post">
+							<table>
+								<!--tr>
+									<th>Inputs</th>
+									<th>First Name</th>
+									<th>Blank</th>
+									<th>Last Name</th>
+								 </tr-->
+								<tr>
+									<td>First Name:</td>
+									<td><input type="text" name="fName" placeholder="First Name Here" required /></td>
+								</tr>
+								<tr>
+									<td>Last Name:</td>
+									<td><input type="text" name="lName" placeholder="Last Name Here" required /></td>
+								</tr>
+								<tr>
+									<td>Password:</td>
+									<td><input type="password" name="Password" placeholder="Password Here" required /></td>
+								</tr>
+								<tr>
+									<td>Confirm Password:</td>
+									<td><input type="password" name="Password" placeholder="Confirm your Password" required /></td>  <!--EDIT THIS-->
+								</tr>
+								<tr>
+									<td>Email:</td>
+									<td><input type="email" name="Email" placeholder="Your Email" required /></td>  <!--EDIT THIS-->
+								</tr>
+								<tr>
+									<td>Gender:</td>
+									<td>
+									<input type="radio" name="gender" value="male"> Male
+									<input type="radio" name="gender" value="female"> Female
+									<input type="radio" name="gender" value="other"> Other
+									</td>
+								</tr>
+								<tr><td>Please put your Contact</td><td>number with ISD code.</td></tr>
+								<tr>
+								<!--	<td>ISD Code:</td>
+									<td><input type="number" name="ISDCode" placeholder="Your Country Code here" /></td>  <!--Put the country code list here-->
+									<td><label for="country-prefix">Contact Number</label></td>
+									<td><input id="country-prefix" type="text" value="+91"></td>
+								</tr>
+								<!--tr>
+									<td>Contact No:</td>
+									<td><input type="number" name="Contact" placeholder="Your Contact Number here" /></td>
+								</tr-->
+								<tr></tr>
+								<tr></tr>
+								<tr></tr>
+								
+								<tr>
+									<td><input type="submit" name="submit" value="Register" /></td>
+									<td>Already a member?<a href="F:\Workspace\HTML\Chacha Chaudhary\Index.html" method="post">Login?</a></td>
+								</tr>
+							</table>
+							
+						</form>
+					</td>
+				</tr>
+			</table>
+			
+			
+		</center>	
+			
+		
+		</div>
+		<footer><p><b style="font-size:50px">&copy;</b>Nicketa</p></footer>
+	</body>
+</html>

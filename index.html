@@ -1,106 +1,163 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<title>Chacha Chaudhary</title>
+	<head>
 	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-<!--===============================================================================================-->	
-	<link rel="icon" type="image/png" href="images/icons/favicon.ico"/>
-<!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
-<!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
-<!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="fonts/iconic/css/material-design-iconic-font.min.css">
-<!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="vendor/animate/animate.css">
-<!--===============================================================================================-->	
-	<link rel="stylesheet" type="text/css" href="vendor/css-hamburgers/hamburgers.min.css">
-<!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="vendor/animsition/css/animsition.min.css">
-<!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="vendor/select2/select2.min.css">
-<!--===============================================================================================-->	
-	<link rel="stylesheet" type="text/css" href="vendor/daterangepicker/daterangepicker.css">
-<!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="css/util.css">
-	<link rel="stylesheet" type="text/css" href="css/main.css">
-<!--===============================================================================================-->
-</head>
-<body>
+	<meta name="viewport" content="width=device-width, initial-scale=1";>
 	
-	<div class="limiter">
-		<div class="container-login100">
-			<div class="wrap-login100 p-t-85 p-b-20">
-				<form class="login100-form validate-form">
-					<span class="login100-form-title p-b-70">
-						Welcome to Chacha Chaudhary
-					</span>
-					<span class="login100-form-avatar">
-						<img src="images/avatar-01.jpg" alt="AVATAR">
-					</span>
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
+	<link rel="shortcut icon" href="images/Chacha.gif" />
+	
+	<title img src="images/Chacha.gif">Login Form</title>
 
-					<div class="wrap-input100 validate-input m-t-85 m-b-35" data-validate = "Enter username">
-						<input class="input100" type="text" name="username">
-						<span class="focus-input100" data-placeholder="Username"></span>
-					</div>
+		
+	<style>
+		/*For CapsLock*/
+		#text {display:none;color:red}
+		
+		* {
+		   padding: 0px;
+		   margin: 0px;
+		  box-sizing: border-box;
+		}
 
-					<div class="wrap-input100 validate-input m-b-50" data-validate="Enter password">
-						<input class="input100" type="password" name="pass">
-						<span class="focus-input100" data-placeholder="Password"></span>
-					</div>
+		/*Styling the whole body*/
+		body {
+          background-image: url("https://raw.githubusercontent.com/kity9188/images/master/eggs.jpg");
+          background-size: cover;
+		  background-attachment: fixed;
+		  background-repeat: no-repeat;
+		  background-position: center;   /*Keep this background setting here only, instead of making a class */		
 
-					<div class="container-login100-form-btn">
-						<button class="login100-form-btn">
-							Login
-						</button>
-					</div>
+		  
+		  font-family: Tangerine, Arial, Courier New, Helvetica;
+		  font-size: 23px;
+		  /* text-shadow: 4px 4px 4px #aaa; */
+		  
+		  margin: 0px;
+		}
+		
+		/* Header/logo Title */
+		.header {
+		color: white;
+	    font-family: Tangerine;
+		}
+	
+		/* Increase the font size of the heading */
+		.header h1 {
+		  text-align: left;
+		  font-size: 50px;  
+		}
+		.header h2 {
+		  font-size: 30px;
+		  text-align: center;
+		}
+   
+		/* Add styles to the form container */
+		.container {
+		  	  
+		  right: 0;
+		  margin: 0px;   /* distance from top*/
+		  max-width: 300px;
+		  padding: 20px;   /*Spacing between coloms*/
+		  background-color: rgba(0,0,0,0.5);
+		  font-family: Tangerine;
+		  text-align: left;
+		}
+				
+		/* Full-width input fields */
+		input[type=text], input[type=password] {
+		  width: 100%;
+		  padding: 15px;
+		  margin: 5px 0 22px 0;
+		  border: none;
+		  background: #f1f1f1;
+		}
 
-					<ul class="login-more p-t-190">
-						<li class="m-b-8">
-							<span class="txt1">
-								Forgot
-							</span>
+		input[type=text]:focus, input[type=password]:focus {
+		  background-color: #ddd;
+		  outline: none;
+		}
 
-							<a href="#" class="txt2">
-								Username / Password?
-							</a>
-						</li>
+		/* Set a style for the submit button */
+		.btn {
+		  background-color: #4CAF50;
+		  color: white;
+		  padding: 16px 20px;
+		  border: none;
+		  cursor: pointer;
+		  width: 100%;
+		  opacity: 0.9;
+		}
 
-						<li>
-							<span class="txt1">
-								Don’t have an account?
-							</span>
+		.btn:hover {
+		  opacity: 1;
+		}
+			
+		/*For CapsLock*/
+		#text {display:none;color:red}
+		
+		
+		/* Footer */
+		.footer {
+		  padding: 20px;
+		  text-align: center;
+		  background: #ddd;
+		}
 
-							<a href="#" class="txt2">
-								Sign up
-							</a>
-						</li>
-					</ul>
+		.avatar {
+		  display: block;
+		  width: 120px;
+		  height: 120px;
+		  border-radius: 50%;
+		  margin: 0 auto;
+		}	
+		
+	</style>
+	
+	</head>
+	
+	<body>
+			
+		<!--h1><img src="images/Chacha.gif" alt="Logo" style="width:100px;height:90px;"></h1-->
+		
+	
+			<div align="center" style="padding-top:50px" class="header"> 
+				<form action="pages/Dashboard.html" method="post" class="container" id="login_form">
+					<h2 >Welcome to Chacha Chaudhary</h2><br>
+					<img src="https://raw.githubusercontent.com/kity9188/images/master/Chacha.gif" alt="Avatar" class="avatar">
+					<br>		
+					<label for="Username"><b>Username:</b></label>
+						<input type="text" name="User" placeholder="Username here" required/>
+					<label for="password"><b>Password:</b></label>
+						<input type="password" name="Password" placeholder="Password here" required/>
+						<!--Detects the caps lock. Press caps lock to see the warning-->
+						<p id="text">WARNING! Caps lock is ON.</p>
+							<script>
+							var input = document.getElementById("myPassword");
+							var text = document.getElementById("text");
+							input.addEventListener("keyup", function(event) {
+							if (event.getModifierState("CapsLock")) {
+							text.style.display = "block";
+								} else {
+								text.style.display = "none"
+								}
+							});
+							</script>
+							
+						<!--label>
+						  <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
+						</label-->  <!--check for checked/unchecked-  this is a checkbox-->
+							
+					<button type="submit" class="btn" id="Login">Login</button>
+					
+						<p align="center">
+							Forgot <a href="forgot.html" method="post" style="color:dodgerblue">Username/Password?</a><br>
+							Not a member yet? <a href="pages/SignUp.html" method="post" style="color:dodgerblue">Sign Up?</a>
+						</p>
+													
 				</form>
-			</div>
-		</div>
 	</div>
-	
-
-	<div id="dropDownSelect1"></div>
-	
-<!--===============================================================================================-->
-	<script src="vendor/jquery/jquery-3.2.1.min.js"></script>
-<!--===============================================================================================-->
-	<script src="vendor/animsition/js/animsition.min.js"></script>
-<!--===============================================================================================-->
-	<script src="vendor/bootstrap/js/popper.js"></script>
-	<script src="vendor/bootstrap/js/bootstrap.min.js"></script>
-<!--===============================================================================================-->
-	<script src="vendor/select2/select2.min.js"></script>
-<!--===============================================================================================-->
-	<script src="vendor/daterangepicker/moment.min.js"></script>
-	<script src="vendor/daterangepicker/daterangepicker.js"></script>
-<!--===============================================================================================-->
-	<script src="vendor/countdowntime/countdowntime.js"></script>
-<!--===============================================================================================-->
-	<script src="js/main.js"></script>
-
-</body>
+		
+		<!--footer><p><b style="font-size:50px">&copy;</b>Nicketa</p></footer-->
+	</body>
 </html>

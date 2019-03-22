@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1";>
+	
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
+		
+		<link rel="stylesheet" href="F:\Workspace\HTML\Chacha Chaudhary\main.css">
+		
+		<link rel="stylesheet" href="F:\Workspace\HTML\Chacha Chaudhary\sidenav.css">
+		
+		<title img src="https://raw.githubusercontent.com/kity9188/images/master/Chacha.gif">Home</title>
+		
+		<style>
+		@import url('https://fonts.googleapis.com/css?family=Merriweather');
+		
+		.body {
+		  font-family: Tangerine, Arial, 'Merriweather', serif;
+		  	padding: 0px;
+			margin: 15px;
+			box-sizing: border-box;
+		}
+		/* Header/logo Title */
+		.header-home {
+		  padding: 10px;
+		  text-align: auto;
+		  background: #990000;
+		  color: white;
+		}
+		/* Style the top navigation bar */
+		.navbar {
+		  overflow: hidden;
+		  background-color: #000033;
+		}
+		/* Style the navigation bar links */
+		.navbar a {
+		  float: left;
+		  display: block;
+		  color: white;
+		  text-align: center;
+		  padding: 14px 20px;
+		  text-decoration: none;
+		}
+
+		/* Right-aligned link */
+		.navbar a.right {
+		  float: right;
+		}
+
+		/* Change color on hover */
+		.navbar a:hover {
+		  background-color: #ddd;
+		  color: black;
+		}
+		
+		/* Footer */
+		.footer-home {
+		  padding: 20px;
+		  text-align: center;
+		  background: #ddd;
+		}
+		
+		.avatarBeLike {
+		  display: block;
+		  width: 120px;
+		  height: 120px;
+		  border-radius: 20px;
+		  /* margin: 0 auto; */
+		}		
+		
+		#row {
+			display: flex;
+			flex-wrap: wrap;
+			margin-left: 30px;
+		}
+		#column {
+			display: inline-block;
+			vertical-align: top;
+			margin-left: 10px;
+		}
+		#column-right {
+			display: inline-block;
+			vertical-align: top;
+			margin-left: 30px;
+			margin-top: 30px;
+		}
+		</style>
+	</head>
+	<body class="body">
+		
+		<div class="header-home">
+			<div id="row">
+				<div id="column"><img src="https://raw.githubusercontent.com/kity9188/images/master/chachaji.png" alt="Logo" class="avatarBeLike"></div>
+				<div id="column-right"><h1 style="font-size:70px;">Chacha Chaudhary</h1></div>
+			</div>
+			
+			
+		</div>
+		<div class="navbar">
+			<a href="">Dashboard</a>
+			<a href="F:\Workspace\HTML\Chacha Chaudhary\Pages\MyProjects.html">My Projects</a>
+			<a href="">About Me</a>
+			<a href="">My Notes</a>
+			<a href="">My Contacts</a>
+			<a href="">Calender</a>
+			<a href="">Chat</a>
+			<a href="" class="right">Sign Out</a>
+		</div>
+		<div class="row">
+			<div class="side">
+				<!-- Side Navigation and right pane. -->
+				<div class="sidenav">
+				  <a href="#about"><b>About</b></a>
+				  <a href="#services">Services</a>
+				  <a href="#clients">Clients</a>
+				  <a href="#contact">Contact</a>
+				  <a href="#contact">Search</a>
+				  <a></a>
+				  <a></a>
+				  <a></a>
+				  <a></a>
+				  <a></a>
+				  <a></a>
+				  <a></a>
+				  <a></a>
+				  <a></a>
+				  <a></a>
+				  <a></a>
+				  <a></a>
+				  <a></a>
+				  <a></a>
+				</div>
+			</div>
+			<div class="main">
+				
+				<h2>Sidebar Dropdown</h2>
+				  <p>Click on the dropdown button to open the dropdown menu inside the side navigation.</p>
+				  <p>This sidebar is of full height (100%) and always shown.</p>
+				  <p>Some random text..</p><p>uheuhguehguethgethgejngjdnoeijroimiormwimwiofjowie</p><p>jfiownioeniowneiowneiocnwoein</p><p>cinweicniowenwceiocnwioenciowdnininininininiggrtkbhebvkjbbkbkbrtgbrtjhuhuiguiguyguyguyguygyuguyg</p>
+				  
+			</div>
+		</div>
+				<script>
+				/* Loop through all dropdown buttons to toggle between hiding and showing its dropdown content - This allows the user to have multiple dropdowns without any conflict */
+				var dropdown = document.getElementsByClassName("dropdown-btn");
+				var i;
+
+				for (i = 0; i < dropdown.length; i++) {
+				  dropdown[i].addEventListener("click", function() {
+				  this.classList.toggle("active");
+				  var dropdownContent = this.nextElementSibling;
+				  if (dropdownContent.style.display === "block") {
+				  dropdownContent.style.display = "none";
+				  } else {
+				  dropdownContent.style.display = "block";
+				  }
+				  });
+				}
+				</script>
+
+		
+	</body>
+</html>
