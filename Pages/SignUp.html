@@ -1,107 +1,126 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<meta charset="UTF-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1";>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1";>
 	
-		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
+	<!--Style sheet-->
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
+	<link rel="stylesheet" href="../css/signup.css">
+	<link rel="stylesheet" href="../css/main.css">
+	
+	<!--Page Icon-->
+	<link rel="shortcut icon" href="../img/Chacha.ico"/>
+	
+	<title img src="../img/Chacha.ico">Login</title>
+</head>
+<body>
+	<div class="container-signUp" align="center">
 		
-		<link rel="stylesheet" href="https://kity9188.github.io/ChachaChaudharyy/css/main.css">
 		
-		<link rel="shortcut icon" href="https://raw.githubusercontent.com/kity9188/images/master/Chacha.ico"/>
-		<title img src="https://raw.githubusercontent.com/kity9188/images/master/Chacha.ico">Sign-Up</title>
-		
-		<style>
-			/*---------- For Sign-Up form ----------*/
-
-			.container-signup {  	  
-			  right: 0;
-			  margin: 0px;   /* distance from top*/
-			  max-width: 350px;
-			  padding: 20px;   /*Spacing between coloms*/
-			  background-color: rgba(0,0,0,0.5);  /*Making Container Transparent*/
-			  font-family: Tangerine;
-			  text-align: left;
-			}
+		<div class="row">
+			<div class="left">
+			<img src="../img/Chacha-new1.gif" alt="Avatar Chacha-full" style="align:center">
+			</div>
+			<h2 align="center">Sign Up</h2>
+			<br>
+			<div class="right">
 			
-			/* Full-width input fields */
-			input[type=text], input[type=password], input[type=email] {
-			 width: 100%;
-			 padding: 7px;
-			 margin: 5px 0 5px 0;
-			 border: none;
-			 background: #f1f1f1;
-			}
-
-			input[type=text]:focus, input[type=password]:focus input[type=email]:focus {
-			 background-color: #ddd;
-			 outline: none;
-			}
-
-			/* Set a style for the submit button */
-			.btn {
-			  background-color: #4CAF50;
-			  color: white;
-			  padding: 12px 20px;
-			  border: none;
-			  cursor: pointer;
-			  width: 100%;
-			  opacity: 0.9;
-			}
-
-			.btn:hover {
-			  opacity: 1;
-			}
-			
-			.wrapper {
-			text-align : center;
-			}
-
-			.image, .form {
-				display: inline-block;
-				vertical-align: top;
-				margin: 20px;
-			}
-			
-			/****************************************/
-		</style>
-	</head>
-	<body class="header">
-	<br>
-	<div class="wrapper">
-		<div class="image"><br><br>
-			<image src="https://raw.githubusercontent.com/kity9188/images/master/Chacha-new1.gif"/>
-		</div>
-		<div class="form">
-			<form action="Pages/Home.html" method="post" class="container-signup">
-				<h2 align="center">Sign Up</h2>
-					<label for="fname">First name:</label><input type="text" name="User" placeholder="First name here" required/>
-					<label for="lname">Last name:</label><input type="text" name="User" placeholder="Last name here" required/>
-					<label for="password">Password:</label>
-						<input type="password" name="Password" placeholder="Password here" required/>
-					<label for="cpassword">Confirm Password:</label>
-						<input type="password" name="Password" placeholder="Confirm your Password" required/>
-					<label for="email">Email:</label>
-						<input type="email" name="Password" placeholder="Your email" required/>
-					<label for="gender">Gender:</label><input type="radio" name="gender" value="male">Male
-						<input type="radio" name="gender" value="female">Female
-						<input type="radio" name="gender" value="other">Other	<br>
-
-					<label for="contact">Contact No:</label>
+			<!--Form begins-->
+			<form action="home.html" method="post">
+			<div class="column-f">
+				<label for="fname">First name:</label>
+					<input type="text" id="fname" name="User" placeholder="First name here" required/>
+			</div>
+			<div class="column-f">
+				<label for="lname">Last name:</label>
+					<input type="text" id="lname" name="User" placeholder="Last name here" required/>
+			</div>
+			<div class="column-f">
+				<label for="password">Password:</label>
+					<input type="password" name="Password" id="password" placeholder="Password here" required/>
+			</div>
+			<div class="column-f">
+				<label for="cpassword">Confirm Password:</label>
+					<input type="password" name="Password" id="cpassword" placeholder="Confirm your Password" required/>
+			</div>
+			<div class="column-f">
+				<label for="email">Email:</label>
+					<input type="email" id="email" name="Password" placeholder="Your email" required/>
+			</div>
+			<div class="column-f">
+				<label for="contact">Contact No:</label>
 					<input id="country-prefix" type="text" value="+91">
-					<br><br>
-					<button type="submit" class="btn">Sign Up</button>
-					
-						<p align="center">
-							Already a member <a href="https://kity9188.github.io/ChachaChaudharyy/index.html" method="post" style="color:dodgerblue">Sign In</a><span></span>
-							
-						</p>
+			</div>
+			
+			<div class="column-f">
+			<br>
+				<label for="gender">Gender:</label>&nbsp; &nbsp; &nbsp;
+					<input type="radio" name="gender" value="male">Male &nbsp; &nbsp;
+					<input type="radio" name="gender" value="female">Female &nbsp; &nbsp;
+					<input type="radio" name="gender" value="other">Other
+			</div>
+				<br><br><br>
+				<button type="submit" class="btn">Sign Up</button>
+				<br><br>
+				<p align="center">
+					Already a member <a href="../index.html" method="post" style="color:dodgerblue">Sign In</a><span></span>
+				</p>
+			<!--Detects the caps lock. Press caps lock to see the warning-->
+				<p id="text">WARNING!  Caps lock is ON.</p>
 			</form>
-		</div>
-	</div>
-		
-				
 			</div>
 		</div>
-	</body>
+	</div>
+	<script>
+			var input = document.getElementById("fname");
+			var text = document.getElementById("text");
+			input.addEventListener("keyup", function(event) {
+				if (event.getModifierState("CapsLock")) {
+					text.style.display = "block";
+				} else {
+					text.style.display = "none"
+				}});
+		</script>
+		<script>
+			var input = document.getElementById("lname");
+			var text = document.getElementById("text");
+			input.addEventListener("keyup", function(event) {
+				if (event.getModifierState("CapsLock")) {
+					text.style.display = "block";
+				} else {
+					text.style.display = "none"
+				}});
+		</script>
+		<script>
+			var input = document.getElementById("password");
+			var text = document.getElementById("text");
+			input.addEventListener("keyup", function(event) {
+				if (event.getModifierState("CapsLock")) {
+					text.style.display = "block";
+				} else {
+					text.style.display = "none"
+				}});
+		</script>
+		<script>
+			var input = document.getElementById("cpassword");
+			var text = document.getElementById("text");
+			input.addEventListener("keyup", function(event) {
+				if (event.getModifierState("CapsLock")) {
+					text.style.display = "block";
+				} else {
+					text.style.display = "none"
+				}});
+		</script>
+	<script>
+			var input = document.getElementById("email");
+			var text = document.getElementById("text");
+			input.addEventListener("keyup", function(event) {
+				if (event.getModifierState("CapsLock")) {
+					text.style.display = "block";
+				} else {
+					text.style.display = "none"
+				}});
+		</script>
+</body>
 </html>

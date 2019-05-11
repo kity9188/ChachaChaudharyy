@@ -1,0 +1,91 @@
+* {
+ padding: 0px;
+ margin: 0px;
+ box-sizing: border-box;
+}
+/*Styling the whole body*/
+body { 
+  background-image: url("../img/tulip-yellow.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center;   /*Keep this background setting here only, instead of making a class */		
+		  
+  font-family: Tangerine, Arial, Courier New, Helvetica;
+  font-size: 23px;
+  /* text-shadow: 4px 4px 4px #aaa; */
+ 
+  margin: 0px;
+}
+		
+/* Header/logo Title */
+.header {
+  color: white;
+  font-family: Tangerine;
+}
+	
+/* Increase the font size of the heading */
+.header h1 {
+ text-align: left;
+ font-size: 50px;  
+}
+.header h2 {
+ font-size: 30px;
+ text-align: center;
+}
+   
+/* Add styles to the form container */
+.container {
+ right: 0;
+ margin: 0px;   /* distance from top*/
+ max-width: 300px;
+ padding: 20px;   /*Spacing between coloms*/
+ background-color: rgba(0,0,0,0.5);
+ font-family: Tangerine;
+ text-align: left;
+ border-radius: 15px;
+}
+				
+/* Full-width input fields */
+input[type=text], input[type=password], input[type=email] {
+ width: 100%;
+ padding: 15px;
+ margin: 5px 0 22px 0;
+ border: none;
+ background: #f1f1f1;
+ border-radius: 25px;
+}
+input[type=text]:focus, input[type=password]:focus, input[type=email]:focus {
+ background-color: #ddd;
+ outline: none;
+}
+/* Set a style for the submit button */
+.btn {
+ background-color: #4CAF50;
+ color: white;
+ padding: 16px 20px;
+ border: none;
+ cursor: pointer;
+ width: 100%;
+ opacity: 0.9;
+ border-radius: 25px;
+}
+.btn:hover {
+ opacity: 1;
+}
+			
+/* Footer */
+.footer {
+ padding: 20px;
+ text-align: center;
+ background: #ddd;
+}
+.avatar {
+ display: block;
+ width: 120px;
+ height: 120px;
+ border-radius: 50%;
+ margin: 0 auto;
+}
+/*For CapsLock*/
+#text {display:none;color:yellow}

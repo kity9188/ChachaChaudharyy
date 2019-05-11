@@ -1,19 +1,90 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 	<head>
-		<meta charset="UTF-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1";>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1";>
 	
-		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
-		
-		<link rel="stylesheet" href="https://kity9188.github.io/ChachaChaudharyy/css/main.css">
-		
-		<link rel="shortcut icon" href="https://raw.githubusercontent.com/kity9188/images/master/Chacha.ico"/>		
-		<title img src="https://raw.githubusercontent.com/kity9188/images/master/Chacha.ico">Forgot</title>
-		
-		<style></style>
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
+	<link rel="stylesheet" href="../css/login.css">
+	<link rel="shortcut icon" href="../img/Chacha.ico"/>
+	
+	<title img src="../img/Chacha.ico">Retrive</title>
+
+	<style>
+	/* Add styles to the form container */
+.containerf {
+ right: 0;
+ margin: 0px;   /* distance from top*/
+ max-width: 600px;
+ min-height: content;
+ padding: 25px;   /*Spacing between coloms*/
+ background-color: rgba(0,0,0,0.5);
+ font-family: Tangerine;
+ font-size: 30px;
+ text-align: left;
+ border-radius: 15px;
+}
+				
+/* Full-width input fields */
+input[type=text], input[type=password], input[type=email] {
+ width: 48%;
+ padding: 10px;
+ margin: 0px 0 22px 0;
+ border: none;
+ background: #f1f1f1;
+ border-radius: 15px;
+}
+input[type=text]:focus, input[type=password]:focus, input[type=email]:focus {
+ background-color: #ddd;
+ outline: none;
+}
+	
+/* Set a style for the submit button */
+.btnf {
+ background-color: #4CAF50;
+ color: white;
+ padding: 10px 12px;
+ border: none;
+ cursor: pointer;
+ width: 20%;
+ opacity: 0.9;
+ border-radius: 5px;
+ float: right;
+}
+.btnf:hover {
+ opacity: 1;
+}
+	</style>
+	<script>
+		function confirmInput() {
+		  fname = document.forms[0].fname.value;
+		  alert("Hello " + fname + "! If your email address exists in our database, you'll receive password reset link. You will now be redirected...");
+		}
+	</script>
+	
 	</head>
+	
 	<body>
-		<div align="center"><h2>Forgot Username/Password?</h2></div>
+		<div align="center" style="padding-top:50px" class="header">
+			<form class="containerf" method="post" onsubmit="confirmInput()" action="../index.html" style="height:206px;">
+				<p>Please enter your name and registered email address.</p>
+				<br>
+				<input id="fname" type="text" placeholder="Your name">&nbsp;&nbsp;
+				<input id="email" type="email" placeholder="Your email" required>
+				<button type="submit" class="btnf">Submit</button>
+				<!--Detects the caps lock. Press caps lock to see the warning-->
+				<p id="text">WARNING! Caps lock is ON.</p>
+			</form>
+		</div>
+		<script>
+			var input = document.getElementById("email");
+			var text = document.getElementById("text");
+			input.addEventListener("keyup", function(event) {
+				if (event.getModifierState("CapsLock")) {
+					text.style.display = "block";
+				} else {
+					text.style.display = "none"
+				}});
+		</script>
 	</body>
 </html>

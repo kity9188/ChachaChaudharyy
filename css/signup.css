@@ -1,0 +1,64 @@
+/* Create two equal columns that floats next to each other */
+.right {
+  float: left;
+  width: 70%;
+  padding: 20px;
+  #height: 300px; /* Should be removed. Only for demonstration */
+}
+
+/* Clear floats after the columns */
+.left {
+  float: left;
+  width: 30%;
+  #height: -10px; /* only for demonstration, should be removed */
+  #background: #ccc;
+  padding: 20px;
+}
+
+/* Columns for form elements that floats next to each other */
+.column-f {
+  float: left;
+  width: 50%;
+  padding: 10px;
+  margin: -35px 0 0px 0;
+  #height: -10px; /* Should be removed. Only for demonstration */
+}
+
+/* Clear floats after the columns */
+.row-f:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.container-signUp {
+		  	  
+  right: 0;
+  margin: 30px;   /* distance from top*/
+  max-width: fit-content;
+  padding: 30px;   /*Spacing between columns*/
+  background-color: rgba(0,0,0,0.5);
+  font-family: Tangerine;
+  text-align: left;
+  color: white;
+  #font-size:15px;
+  border-radius: 50px;
+  content: "";
+  display: table;
+  clear: both;
+  height:200px;
+}
+input[type=text], input[type=password], input[type=email] {
+    width: 100%;
+    padding: 7px;
+    margin: 5px 0 5px 0;
+    border: none;
+    background: #f1f1f1;
+}
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+}

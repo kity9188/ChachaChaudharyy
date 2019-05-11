@@ -5,159 +5,52 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1";>
 	
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
-	<link rel="shortcut icon" href="https://raw.githubusercontent.com/kity9188/images/master/Chacha.ico"/>
+	<link rel="stylesheet" href="css/login.css">
+	<link rel="shortcut icon" href="img/Chacha.ico"/>
 	
-	<title img src="https://raw.githubusercontent.com/kity9188/images/master/Chacha.ico">Login Form</title>
+	<title img src="img/Chacha.ico">Login</title>
 
-		
-	<style>
-		/*For CapsLock*/
-		#text {display:none;color:red}
-		
-		* {
-		   padding: 0px;
-		   margin: 0px;
-		  box-sizing: border-box;
-		}
-
-		/*Styling the whole body*/
-		body { 
-          background-image: url("https://raw.githubusercontent.com/kity9188/images/master/tulip-yellow.jpg");
-          background-size: cover;
-		  background-attachment: fixed;
-		  background-repeat: no-repeat;
-		  background-position: center;   /*Keep this background setting here only, instead of making a class */		
-
-		  
-		  font-family: Tangerine, Arial, Courier New, Helvetica;
-		  font-size: 23px;
-		  /* text-shadow: 4px 4px 4px #aaa; */
-		  
-		  margin: 0px;
-		}
-		
-		/* Header/logo Title */
-		.header {
-		color: white;
-	    font-family: Tangerine;
-		}
-	
-		/* Increase the font size of the heading */
-		.header h1 {
-		  text-align: left;
-		  font-size: 50px;  
-		}
-		.header h2 {
-		  font-size: 30px;
-		  text-align: center;
-		}
-   
-		/* Add styles to the form container */
-		.container {
-		  	  
-		  right: 0;
-		  margin: 0px;   /* distance from top*/
-		  max-width: 300px;
-		  padding: 20px;   /*Spacing between coloms*/
-		  background-color: rgba(0,0,0,0.5);
-		  font-family: Tangerine;
-		  text-align: left;
-		}
-				
-		/* Full-width input fields */
-		input[type=text], input[type=password] {
-		  width: 100%;
-		  padding: 15px;
-		  margin: 5px 0 22px 0;
-		  border: none;
-		  background: #f1f1f1;
-		}
-
-		input[type=text]:focus, input[type=password]:focus {
-		  background-color: #ddd;
-		  outline: none;
-		}
-
-		/* Set a style for the submit button */
-		.btn {
-		  background-color: #4CAF50;
-		  color: white;
-		  padding: 16px 20px;
-		  border: none;
-		  cursor: pointer;
-		  width: 100%;
-		  opacity: 0.9;
-		}
-
-		.btn:hover {
-		  opacity: 1;
-		}
-			
-		/*For CapsLock*/
-		#text {display:none;color:red}
-		
-		
-		/* Footer */
-		.footer {
-		  padding: 20px;
-		  text-align: center;
-		  background: #ddd;
-		}
-
-		.avatar {
-		  display: block;
-		  width: 120px;
-		  height: 120px;
-		  border-radius: 50%;
-		  margin: 0 auto;
-		}	
-		
-	</style>
+	<style></style>
 	
 	</head>
 	
 	<body>
-			
-		<!--h1><img src="images/Chacha.gif" alt="Logo" style="width:100px;height:90px;"></h1-->
+		<div align="center" style="padding-top:50px" class="header"> 
+			<form action="pages/home.html" method="post" class="container" id="login_form">
+				<h2 >Welcome to Chacha Chaudhary</h2><br>
+				<img src="img/Chacha.gif" alt="Avatar" class="avatar">
+				<br>		
+				<label for="Username"><b>Username:</b></label>
+				<input type="text" name="User" placeholder="Username here" required/>
+				<br>
+				<label for="password"><b>Password:</b></label>
+				<input type="password" name="Password" placeholder="Password here" required/>
 		
-	
-			<div align="center" style="padding-top:50px" class="header"> 
-				<form action="https://github.com/kity9188/ChachaChaudharyy/Pages/Home.html" method="post" class="container" id="login_form">
-					<h2 >Welcome to Chacha Chaudhary</h2><br>
-					<img src="https://raw.githubusercontent.com/kity9188/images/master/Chacha.gif" alt="Avatar" class="avatar">
-					<br>		
-					<label for="Username"><b>Username:</b></label>
-						<input type="text" name="User" placeholder="Username here" required/>
-					<label for="password"><b>Password:</b></label>
-						<input type="password" name="Password" placeholder="Password here" required/>
-						<!--Detects the caps lock. Press caps lock to see the warning-->
-						<p id="text">WARNING! Caps lock is ON.</p>
-							<script>
-							var input = document.getElementById("myPassword");
-							var text = document.getElementById("text");
-							input.addEventListener("keyup", function(event) {
-							if (event.getModifierState("CapsLock")) {
-							text.style.display = "block";
-								} else {
-								text.style.display = "none"
-								}
-							});
-							</script>
+				<!--Detects the caps lock. Press caps lock to see the warning-->
+				<p id="text">WARNING! Caps lock is ON.</p>
+									
+				<!--label>
+				<input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
+				</label-->  <!--check for checked/unchecked-  this is a checkbox-->
 							
-						<!--label>
-						  <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
-						</label-->  <!--check for checked/unchecked-  this is a checkbox-->
-							
-					<button type="submit" class="btn" id="Login">Login</button>
-					
-						<p align="center">
-							Forgot <a href="Pages/Forgot.html" method="post" style="color:dodgerblue">Username/Password?</a><br>
-							Not a member yet? <a href="Pages/SignUp.html" method="post" style="color:dodgerblue">Sign Up?</a>
-						</p>
+				<button type="submit" class="btn" id="Login">Login</button>
+				<br><span></span>
+				<p align="center">
+				Forgot <a href="pages/forgot.html" method="post" style="color:dodgerblue">Username/Password?</a><br>
+				Not a member yet? <a href="pages/signUp.html" method="post" style="color:dodgerblue">Sign Up?</a>
+				</p>
 													
-				</form>
-	</div>
-		
-		<!--footer><p><b style="font-size:50px">&copy;</b>Nicketa</p></footer-->
+			</form>
+		</div>
+		<script>
+			var input = document.getElementBytype("password");
+			var text = document.getElementBytype("text");
+			input.addEventListener("keyup", function(event) {
+				if (event.getModifierState("CapsLock")) {
+					text.style.display = "block";
+				} else {
+					text.style.display = "none"
+				}});
+		</script>
 	</body>
 </html>

@@ -1,83 +1,79 @@
-/* Column container */
-.row {  
-  display: -ms-flexbox; /* IE10 */
-  display: flex;
-  -ms-flex-wrap: wrap; /* IE10 */
-  flex-wrap: wrap;
-}
-
-/* Side Navigation */
-.side {
-  -ms-flex: 30%; /* IE10 */
-  flex: 30%;
-  background-color: #f1f1f1;
-  padding: 0px;
-  margin-right:1191px;
-}
-
-/* Main column */
-.main {   
-  -ms-flex: 70%; /* IE10 */
-  flex: 70%;
-  color: white;
-  padding: 4%;
-  margin-left: 145px; /* Same as the width of the sidenav */
-  font-size: 15px; /* Increased text to enable scrolling */
-  position: absolute;
-  background-color: rgba(0,0,0,0.5);  /*Making Container Transparent*/
-  font-family: SANS-SERIF;
-}
-
-
-/* Fixed sidenav, full height */
-.sidenav {
-  height: 100%;
-  width: 145px;
-  position: inherit;
-  z-index: 1;
+.sidebar {
+  width: 0;
+  position: fixed; /* Position them relative to the browser window */
   top: 0;
-  left: 0;
-  background-color: #003366;
-  /* color: auto; */
-  overflow-x: hidden;
-  padding-top: 20px;  
-}
-
-/* Style the sidenav links and the dropdown button */
-.sidenav a {
-  padding: 10px 8px 6px 20px;
-  text-decoration: none;
-  font-family: Tangerine;
-  font-size: 25px;
+  left: 0px; /* Position them outside of the screen */
+  transition: 0.3s;
+  padding: 15px;
+  text-decoration: none; /* Remove underline */
+  font-size: 15px;
   color: white;
-  display: block;
-  border: none;
-  background: none;
-  width: 100%;
+  background-color: #111;  
   text-align: center;
-  cursor: pointer;
-  outline: none;
+  margin-left: -30px;
+  height:100%;
+  z-index: 1;
+  overflow-x: hidden;
+  float: left;
 }
 
-/* On mouse-over */
-.sidenav a:hover, {
-  color: #f1f1f1;
+.sidebar a {
+  display: block;
+  color: white;
+  #padding: 16px;
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 20px;
+  transition: 0.3s;
 }
-
-/* Add an active class to the active dropdown button */
-.active {
-  background-color: green;
+ 
+.sidebar a.active {
+  background-color: #555;
   color: white;
 }
-
-/* Optional: Style the caret down icon */
-.fa-caret-down {
-  float: right;
-  padding-right: 8px;
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  #margin-left: 50px;
+}
+/* .sidebar a:hover:not(.active) {
+  background-color: #ddd;
+  color: white;
+} */
+.sidebar a:hover {
+  background-color: #ddd;
+  color: white;
+  left: 0;
 }
 
-/* Some media queries for responsiveness */
-@media screen and (max-height: 450px) {
-  .sidenav {padding-top: 15px;}
-  .sidenav a {font-size: 18px;}
+div.content {
+  margin-left: 200px;
+  padding: 1px 16px;
+  height: 1000px;
 }
+
+@media screen and (max-width: 700px) {
+  .sidebar {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+  .sidebar a {float: left;}
+  div.content {margin-left: 0;}
+}
+
+@media screen and (max-width: 400px) {
+  .sidebar a {
+    text-align: center;
+    float: none;
+  }
+}
+
+/* <div class="sidebar">
+  <a class="active" href="#home">Home</a>
+  <a href="#news">News</a>
+  <a href="#contact">Contact</a>
+  <a href="#about">About</a>
+</div> */

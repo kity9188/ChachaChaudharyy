@@ -1,15 +1,4 @@
-/*//////////////////////////////////////////////////////////////////
-[ FONT ]*/
-
-@font-face {
-	font-family: Tangerine
-	src: url(https://fonts.googleapis.com/css?family=Tangerine');
-}
-@import url('https://fonts.googleapis.com/css?family=Merriweather');
-@import url('https://fonts.googleapis.com/css?family=Slabo+27px');
-
-/*//////////////////////////////////////////////////////////////////
-[ Body ]*/
+/* Body */
 
 * {
 	padding: 0px;
@@ -17,22 +6,29 @@
 	box-sizing: border-box;
   }
 
-  /*Styling whole body*/
-  body {
-  background-image: url("https://raw.githubusercontent.com/kity9188/images/master/tulip-yellow.jpg");
-  background-size: cover;
+ /*Styling the whole body*/
+body { 
+    font-family: Tangerine, Arial, Courier New, Helvetica;
+	font-size: 23px;
+    margin: 0px;	
+	
+ /*Keep this background setting here only, instead of making a class */	
+  /* The image used */
+  background-image: url("../img/tulip-yellow.jpg");	
+  
+  /* Center and scale the image nicely */
   background-attachment: fixed;
+  background-position: center;
   background-repeat: no-repeat;
-  background-position: center;   /*Keep this background setting here only, instead of making a class */		
-
-		  
-  font-family: 'Tangerine', Arial, Courier New, Helvetica, 'Merriweather', serif, 'Slabo 27px';
-  font-size: 23px;
-  /*text-shadow: 4px 4px 4px #aaa;  */
-	  
-  margin: 0px;
+  background-size: cover;
+  
+    /* Add the blur effect */
+  #filter: blur(8px);
+  #-webkit-filter: blur(8px);
+  
+    /* Full height */
+  height: 100%; 
 }
-
 
 /* -------------------- Header and Heading ------------------------- */
 /* Header/logo Title */
@@ -67,23 +63,53 @@
   margin: 0 auto;
 }
 
-/************  For side by side alignment  ***************/
+.blur {
+	-webkit-filter: blur(4px);
+	filter: blur(4px);
+}
 
-/******************************************
-/* In html page */
-<div class="row">
-    <div class="image">
-    </div>
-    <div class="form">
-    </div>
-</div>
-/* In css */
-.row {
-    text-align : center;
+/*For CapsLock*/
+#text {display:none;color:yellow}
+
+/****Styling the container***************/
+/* Add styles to the form container */
+.container {	  
+  right: 0;
+  margin: 0px;   /* distance from top*/
+  max-width: 315px;
+  padding: 20px;   /*Spacing between coloms*/
+  background-color: rgba(0,0,0,0.5);
+  font-family: Tangerine;
+  text-align: left;
 }
-.image, .form {
-    display: inline-block;
-    vertical-align: top;
+			
+/* Full-width input fields */
+  input[type=text], input[type=password], input[type=email] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+  border-radius: 25px;
 }
-*******************************************/
+
+input[type=text]:focus, input[type=password]:focus, input[type=email]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Set a style for the submit button */
+.btn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+  border-radius: 25px;
+}
+
+.btn:hover {
+  opacity: 1;
 }
